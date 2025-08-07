@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stick to Canvas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 50px;
+    }
+
+    .section-1 {
+      background-color: #f1f1f1;
+    }
+
+    .sticky-container {
+      position: sticky;
+      top: 100px;
+      z-index: 10;
+      background: white;
+      padding: 20px;
+      border: 2px solid #444;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .section-2 {
+      background-color: #d6eaf8;
+    }
+
+    .section-3 {
+      background-color: #aed6f1;
+    }
+
+    .spacer {
+      height: 1500px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section-1">
+    <h2>Intro Section</h2>
+    <p>This is just a normal section before the sticky part begins.</p>
+  </section>
+
+  <section class="section-2">
+    <div class="sticky-container">
+      This sticks 100px from the top and scrolls away when this canvas ends
+    </div>
+    <div class="spacer">
+      <p>Keep scrolling down to see the sticky container scroll away.</p>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <h2>Next Section</h2>
+    <p>The sticky section above should have scrolled away by now.</p>
+  </section>
+
+</body>
+</html>
